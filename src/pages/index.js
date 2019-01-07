@@ -3,7 +3,6 @@ import {Link} from "gatsby"
 import Header from "../components/header"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
-import Menu from "../components/menu"
 
 export default () => (
     <div style={{ margin: `3rem auto`, maxWidth: 600 }}>
@@ -19,7 +18,7 @@ export default () => (
         </Helmet>
         <h1>Hello world!</h1>
         <p>What a world :)</p>
-        <Menu />
+        <Header />
         <img src="https://source.unsplash.com/random/400x200" alt="" />
         </Layout>
         </div>
