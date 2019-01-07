@@ -1,6 +1,7 @@
 ---
-title: "Sweet Pandas Eating Sweets"
-date: "2017-08-10"
+title: 'Sweet Pandas Eating Sweets'
+date: '2017-08-10'
+path: '/sweet-pandas-eating-sweets'
 ---
 
 Pandas are really sweet.
