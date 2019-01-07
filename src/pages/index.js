@@ -14,7 +14,7 @@ export default () => (
         <Helmet>
           <meta charSet="utf-8" />
           <title>My Title</title>
-          <link rel="canonical" href="http://mysite.com/example" />
+          <link rel="canonical" href="https://mysite.com/example" />
         </Helmet>
         <h1>Hello world!</h1>
         <p>What a world :)</p>
