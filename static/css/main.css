@@ -47,7 +47,7 @@ main {
 /*apply accent colour to links*/
 
 a:link, a:visited {
-    color: cadetblue;
+    color: dodgerblue;
 }
 
 a.icon:hover {
@@ -55,7 +55,7 @@ a.icon:hover {
 }
 
 a:hover {
-    color: var(--accent) !important;
+    color: deepskyblue !important;
 }
 
 /*paginator at bottom of list view*/
@@ -75,7 +75,7 @@ a:hover {
 }
 
 .item-tag {
-    background-color: var(--accent);
+    background-color: dodgerblue;
 }
 
 /*navigation bar icons*/
