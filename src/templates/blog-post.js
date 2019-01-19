@@ -5,6 +5,7 @@ import Bio from '../components/Bio'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { rhythm, scale } from '../utils/typography'
+import ReactAdsense from '../components/ReactAdsense'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -58,6 +59,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        <ReactAdsense />
       </Layout>
     )
   }
