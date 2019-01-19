@@ -57,6 +57,10 @@ Minimum amount that you can withdraw is 50&euro; and you don't have any fees to 
 
 Many websites say that they are very picky on who can become a publisher considering the website amount of views, but on their website I couldn't find anything to back that up.
 
+# Bitmedia
+
+
+
 
 This page is still under development
 ---
