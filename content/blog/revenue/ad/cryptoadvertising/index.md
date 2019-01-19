@@ -47,7 +47,7 @@ Cointraffic allows website and mobile ads.
 
 Two of the biggest publishers listed publishers are CoinMarketCap and CoinGecko.
 
-# Coinzilla
+## Coinzilla
 
 Coinzilla offers the possibility to use different ad formats, but it's not very clear if you can implement these ads on both apps and websites. *So I'm gonna ask them and then I will let you know*
 
@@ -57,10 +57,19 @@ Minimum amount that you can withdraw is 50&euro; and you don't have any fees to 
 
 Many websites say that they are very picky on who can become a publisher considering the website amount of views, but on their website I couldn't find anything to back that up.
 
-# Bitmedia
+## Bitmedia
 
+# Crypto related ad networks 
 
+## Google Adsense
 
+The most popular ad network in generally
+
+## Media.net
+
+Mostly popular in North America
+
+## PropellerAds
 
 This page is still under development
 ---
