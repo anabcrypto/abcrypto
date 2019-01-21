@@ -67,7 +67,6 @@ class Layout extends React.Component {
           {` `}
           all rights reserved.
         </footer>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       </div>
     )
   }
