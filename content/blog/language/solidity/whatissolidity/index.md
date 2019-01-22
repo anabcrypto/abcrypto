@@ -3,8 +3,8 @@ title: What is Solidity?
 date: 2019-01-17
 ---
 
-Solidity is an object-oriented, high-level language for implementing smart contracts. 
-Smart contracts are programs which govern the behaviour of accounts within the Ethereum state([1](https://solidity.readthedocs.io/en/v0.5.2/ "Solidity docs")).
+Solidity is an object-oriented language, with the main purpose of getting smart contracts.
+Its main usage is on the Ethereum blockchain.
 
 # Why Solidity and not something else?
 
