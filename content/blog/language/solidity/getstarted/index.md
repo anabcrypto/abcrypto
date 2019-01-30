@@ -8,7 +8,7 @@ Solidity version which I'm going to use: v0.5.2
 Minimal knowledge: In the most basic way Solidity is composed by a **contract**, made by **functions** and **states**. It needs a **version** which is specified in the **` pragma solidity `** line
 as we will see. 
 
-```solidity
+```solidity{numberLines: true}
 
 pragma solidity 0.5.2;
 
