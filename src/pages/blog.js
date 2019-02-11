@@ -13,9 +13,6 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <h1 className="title is-size-4">A magnifying glass on the crypto world.</h1>
-        
-        <h1 className="title is-size-4" >Latest posts</h1>
         <SEO
           title="All posts"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
@@ -33,6 +30,8 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
+              <small>Last updated on: {node.frontmatter.date}</small>
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           )
         })}
@@ -53,10 +52,12 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
+          excerpt
           fields {
             slug
           }
           frontmatter {
+            date(formatString: "MMMM DD, YYYY")
             title
           }
         }

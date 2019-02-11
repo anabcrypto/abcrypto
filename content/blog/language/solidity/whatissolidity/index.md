@@ -24,5 +24,3 @@ Because right now it's the most popular one, alternatives are growing, but they 
 This page is still under development
 ---
 
-
-<iframe src="https://ethfiddle.com/services/iframesnippet/2Rx8cQdEx3" scrolling="no" frameborder="0" height="300" width="300" allowtransparency="true" class="ef_embed_iframe" style="width: 100%; overflow: hidden;"></iframe>

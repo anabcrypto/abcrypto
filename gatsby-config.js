@@ -47,12 +47,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `UA-132384513-1`,
-      },
-    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -74,5 +68,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-sitemap`,
   ],
 }
