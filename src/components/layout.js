@@ -7,7 +7,7 @@ import 'bulma/css/bulma.css'
 
 class Layout extends React.Component {
   render() {
-    const { title, children } = this.props
+    const { title, children, location } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
