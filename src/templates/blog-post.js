@@ -41,14 +41,14 @@ class BlogPostTemplate extends React.Component {
             padding: 0,
           }}
         >
-          <li>
+          <li className="pagination-previous is-rounded">
             {previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
-          <li>
+          <li className="pagination-next is-rounded">
             {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →

@@ -13,11 +13,15 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <h1 className="title is-size-4">A magnifying glass on the crypto world.</h1>
-        
+        <div className="has-text-centered">
+        <h1 className="title is-size-4">Hey!</h1>
+        <h1 className="title is-size-4">Here you will find documentation about the crypto world and what rotates around it.</h1>
+        <h1 className="title is-size-4">What are you waiting for?</h1>
+        <h1 className="button is-medium is-info">Let's learn</h1>
         <h1 className="title is-size-4" >Latest posts</h1>
+        </div>
         <SEO
-          title="All posts"
+          title="Homepage"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         {posts.map(({ node }) => {
@@ -29,7 +33,7 @@ class BlogIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug} className="has-text-centered">
                   {title}
                 </Link>
               </h3>

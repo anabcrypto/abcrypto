@@ -7,7 +7,7 @@ import 'bulma/css/bulma.css'
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
+    const { title, children } = this.props
     const rootPath = `${__PATH_PREFIX__}/`
     let header
 
@@ -23,6 +23,15 @@ class Layout extends React.Component {
     return (
       <div>
       <Header />
+      {/*<nav className="breadcrumb is-centered" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="#">Bulma</a></li>
+    <li><a href="#">Documentation</a></li>
+    <li><a href="#">Components</a></li>
+    <li className="is-active"><a href="#" aria-current="page">Breadcrumb</a></li>
+  </ul>
+</nav>
+*/}
       <div
         style={{
           marginLeft: `auto`,
