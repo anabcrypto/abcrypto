@@ -19,6 +19,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        path: `${__dirname}/content/topics`,
+        name: `topics`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         path: `${__dirname}/content/assets`,
         name: `assets`,
       },
@@ -69,5 +76,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    { 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+      }
+    },
+    `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
 }
