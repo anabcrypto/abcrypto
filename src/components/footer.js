@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 class Footer extends React.Component {
   render () {
     return (
-        <footer className="footer has-background-white" style={{padding:'3rem',}}>
+        <footer className="footer has-background-white Site-footer" style={{padding:'3rem',}}>
           <div className="level">
             <div className="columns">
               <div className="column">

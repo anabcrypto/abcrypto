@@ -1,34 +1,65 @@
 import React from "react"
-import Layout from "../components/layout" 
 import { Link, graphql } from "gatsby"
 
-class About extends React.Component {
-  render () {
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { rhythm } from "../utils/typography"
+
+class TopicIndex extends React.Component {
+  render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMarkdownRemark.edges
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <h1 className="title">Topics</h1>
-        <h1 className="subtitle"> 
-          <h2 className="subtitle">Solidity</h2>
-          <p><Link to="/language/solidity/whatissolidity/">What is Solidity?</Link></p>
-          <p><Link to="/language/solidity/getstarted/">Let's get started</Link></p>
-          <h2 className="subtitle">Ads</h2>
-          <p><Link to="/revenue/ad/cryptoadvertising/">Some possibilities to gets ads on your crypto website/app</Link></p>
-        </h1>
+        <SEO
+          title="Topics"
+          keywords={[`topic`, `gatsby`, `javascript`, `react`]}
+        />
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
+                </Link>
+              </h3>
+              <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+            </div>
+          )
+        })}
       </Layout>
     )
   }
 }
 
-export default About
+export default TopicIndex
 
 export const pageQuery = graphql`
   query {
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          html
+          tableOfContents
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+          }
+        }
       }
     }
   }

@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-class BlogPostTemplate extends React.Component {
+class TopicPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -26,7 +26,6 @@ class BlogPostTemplate extends React.Component {
           Last updated on: {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <a>{post.frontmatter.tags}</a>
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -62,10 +61,10 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default TopicPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query TopicPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
@@ -79,7 +78,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        tags
       }
     }
   }

@@ -1,9 +1,10 @@
 import React from "react"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import Footer from "./footer"
 import Header from "./header"
 import 'bulma/css/bulma.css'
+
 
 class Layout extends React.Component {
   render() {
