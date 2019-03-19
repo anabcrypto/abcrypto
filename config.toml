@@ -1,0 +1,126 @@
+baseURL = "https://abcrypto.co"
+title = "ABCrypto"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+theme = "minimal"
+#disqusShortname = "username" # delete this to disable disqus comments
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "pygments"
+
+[languages]
+
+[languages.en]
+    languageName = "English"
+    weight = 1
+    title = "ABCrypto"
+    copyright = "© ABCrypto 2019, all rights reserved."
+    contentDir = "content/english"
+  
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+
+
+
+[languages.en.params]
+    author = "omrllm"
+    description = "A magnyfing glass on the crypto world."
+    githubUsername = "omrllm"
+    accent = "orange"
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/topics/"
+    name = "Topics"
+    weight = 2
+
+[[menu.main]]
+    url = "/blog/"
+    name = "Blog"
+    weight = 3 
+
+[[menu.main]]
+    url = "https://github.com/anabcrypto/abcrypto"
+    name = "Github"
+    weight = 4        
+
+[[menu.footer]]
+    url = "/about/"
+    name = "About"
+    weight = 5
+
+[[menu.footer]]
+    url = "/termsofuse/"
+    name = "Terms of Use"
+    weight = 6
+
+[[menu.footer]]
+    url = "/contact/"
+    name = "Contact"
+    weight = 7
+# Social icons to be shown on the right-hand side of the navigation bar
+# The "name" field should match the name of the icon to be used
+# The list of available icons can be found at http://fontawesome.io/icons/
+
+[[menu.icon]]
+		url = "/"
+		name = "language"
+		weigth = 1
+
+
+[languages.it]
+    languageName = "Italian"
+    weight = 10
+    title = "ABCrypto"
+    description = "Una lente d'ingrandimento sul mondo cripto."
+    accent = "orange"
+    backgroundColor = "white"
+    font = "Raleway"
+    copyright = "© ABCrypto 2019, tutti i diritti sono riservati."
+    contentDir = "content/italian"
+
+[[languages.it.menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 20
+
+[[languages.it.menu.main]]
+    url = "/argomenti/"
+    name = "Argomenti"
+    weight = 30
+
+[[languages.it.menu.main]]
+    url = "/blog/"
+    name = "Blog"
+    weight = 40
+      
+[[languages.it.menu.main]]
+    url = "/bio/"
+    name = "Bio"
+    weight = 50
+
+[[languages.it.menu.icon]]
+		url = "/"
+		name = "language"
+		weigth = 1    
+
+[languages.ar]
+    languageName = "Arabic"
+    weight = 11
+    title = "ABCrypto"
+    description = "Una lente d'ingrandimento sul mondo cripto."
+    accent = "orange"
+    backgroundColor = "white"
+    font = "Raleway"
+    copyright = "© ABCrypto 2019, tutti i diritti sono riservati."
+    contentDir = "content/italian"        

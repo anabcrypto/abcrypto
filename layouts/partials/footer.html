@@ -1,0 +1,19 @@
+        <footer>
+            <div>
+                {{ if .Site.Menus.footer }}
+                        <ul style="list-style-type: none; display: flex; justify-content: center;">
+                            {{ range sort .Site.Menus.footer }}
+                                <li style="margin-right: 1%"><a href="{{ .URL }}">{{ .Name }}</a></li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+            </div>
+            
+            <p class="copyright text-muted">{{ .Site.Params.copyright | default " &copy; ABCrypto 2019, all rights reserved." | markdownify }}</p>
+            
+
+        </footer>
+       
+    </body>
+
+</html>
