@@ -9,16 +9,11 @@
         <h1>{{ .Site.Title }}</h1>
 
         <h2>{{ markdownify .Site.Params.Description }}</h2>
-        <br/>
-        <button><a href="/topics">Let's learn!</a></button>
-        <br/>
-        <br/>
-        <h3>Latest Posts</h3>
-        {{ range (.Paginator 5).Pages }}
-        <li style="list-style-type: none;">
-            <a href="{{.Permalink}}">{{.Title}}</a>
-        </li>
-    {{ end }}
+        
+        <hr>
+        <div class="has-text-centered">
+                <a href="/topics/" class="button is-size-5">Let's learn!</a>
+        </div>
     </div>
 
 </main>

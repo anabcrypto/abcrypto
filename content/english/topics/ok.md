@@ -1,10 +1,10 @@
 ---
-title: "Ok"
+title: "Ok come va tutto bene si?"
 date: 2019-03-19
 draft: false
 showthedate: false
 ---
 
-{{.Page.TableOfContents}}
+alright ksajdoisjdo skdajosad sakdpoksd
 
 

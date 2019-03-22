@@ -43,49 +43,51 @@
 
     <body>
         {{ partial "body-open" . }}
-        <nav class="navbar navbar-default navbar-fixed-top">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
 
-            <div class="container">
+                <div class="navbar-brand">
 
-                <div class="navbar-header">
+                    <a class="navbar-item is-size-4" href="/">{{ .Site.Title }}</a>
 
-                    <a class="navbar-brand visible-xs" href="#">{{ .Title }}</a>
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
 
                 </div>
 
-                <div class="collapse navbar-collapse">
+                <div class="navbar-menu">
 
                     {{ if .Site.Menus.main }}
-                        <ul class="nav navbar-nav">
+                        <div class="navbar-start">
                             {{ range sort .Site.Menus.main }}
-                                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                                <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
                             {{ end }}
-                        </ul>
+                        </div>
                     {{ end }}
 
                     {{ if gt (len .Site.Home.AllTranslations) 1 }}
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="navbar-end">
+                                <div class="navbar-item dropdown is-hoverable">
+                                        <div class="dropdown-trigger">
+                                            <button class="button" style="color: dodgerblue;" aria-haspopup="true" aria-controls="dropdown-menu4">
+                    <span>
                         {{ i18n "language" }} 
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    </span>
+                    <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+
+                    <div class="navbar-dropdown">
                         {{ range .Site.Home.AllTranslations }}
-                            <a class="dropdown-item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                            <a class="navbar-item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
                         {{ end }}
                     </div>
-                </li>
-                        </ul>
+                </div>
+                        </div>
                     {{ end }}
 
                 </div>
-
-            </div>
 
         </nav>

@@ -216,3 +216,7 @@ img {
   .dropdown + h2 {
     margin-top: 60px;
   }
+
+  .navbar navbar-default navbar-fixed-top {
+    color: red;
+  }

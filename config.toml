@@ -30,14 +30,8 @@ expiryDate = ["expiryDate"]
     author = "omrllm"
     description = "A magnyfing glass on the crypto world."
     githubUsername = "omrllm"
-    accent = "orange"
     backgroundColor = "white"
     font = "Raleway" # should match the name on Google Fonts!
-
-[[menu.main]]
-    url = "/"
-    name = "Home"
-    weight = 1
 
 [[menu.main]]
     url = "/topics/"
@@ -83,7 +77,6 @@ expiryDate = ["expiryDate"]
     weight = 10
     title = "ABCrypto"
     description = "Una lente d'ingrandimento sul mondo cripto."
-    accent = "orange"
     backgroundColor = "white"
     font = "Raleway"
     copyright = "© ABCrypto 2019, tutti i diritti sono riservati."
