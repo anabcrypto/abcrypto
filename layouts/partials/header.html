@@ -3,6 +3,7 @@
     <head>
         {{ partial "head-open" . }}
         <meta charset="utf-8">
+        <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -49,7 +50,7 @@
 
                     <a class="navbar-item is-size-4" href="/">{{ .Site.Title }}</a>
 
-                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav-menu">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -57,7 +58,7 @@
 
                 </div>
 
-                <div class="navbar-menu">
+                <div class="navbar-menu" id="nav-menu">
 
                     {{ if .Site.Menus.main }}
                         <div class="navbar-start">
@@ -69,25 +70,25 @@
 
                     {{ if gt (len .Site.Home.AllTranslations) 1 }}
                         <div class="navbar-end">
-                                <div class="navbar-item dropdown is-hoverable">
+                                <div class="navbar-item dropdown">
                                         <div class="dropdown-trigger">
                                             <button class="button" style="color: dodgerblue;" aria-haspopup="true" aria-controls="dropdown-menu4">
-                    <span>
-                        {{ i18n "language" }} 
-                    </span>
-                    <span class="icon is-small">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
+                                            <span>
+                                                {{ i18n "language" }} 
+                                            </span>
+                                            <span class="icon is-small">
+                                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                            </span>
 
-                    <div class="navbar-dropdown">
-                        {{ range .Site.Home.AllTranslations }}
-                            <a class="navbar-item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-                        {{ end }}
-                    </div>
-                </div>
+                                            <div class="navbar-dropdown">
+                                                {{ range .Site.Home.AllTranslations }}
+                                                    <a class="navbar-item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                                                {{ end }}
+                                            </div>
+                                        </div>
+                                </div>
                         </div>
                     {{ end }}
-
                 </div>
 
         </nav>
