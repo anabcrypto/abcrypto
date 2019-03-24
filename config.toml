@@ -14,17 +14,8 @@ pygmentsStyle = "pygments"
     languageName = "English"
     weight = 1
     title = "ABCrypto"
-    copyright = "© ABCrypto 2019, all rights reserved."
+    copyright = "&copy; ABCrypto 2019, all rights reserved."
     contentDir = "content/english"
-  
-[frontmatter]
-date = ["date", "publishDate", "lastmod"]
-lastmod = [":git", "lastmod", "date", "publishDate"]
-publishDate = ["publishDate", "date"]
-expiryDate = ["expiryDate"]
-
-
-
 
 [languages.en.params]
     author = "omrllm"
@@ -48,6 +39,8 @@ expiryDate = ["expiryDate"]
     name = "Github"
     weight = 4        
 
+# Footer
+
 [[menu.footer]]
     url = "/about/"
     name = "About"
@@ -62,58 +55,91 @@ expiryDate = ["expiryDate"]
     url = "/contact/"
     name = "Contact"
     weight = 7
-# Social icons to be shown on the right-hand side of the navigation bar
-# The "name" field should match the name of the icon to be used
-# The list of available icons can be found at http://fontawesome.io/icons/
 
-[[menu.icon]]
-		url = "/"
-		name = "language"
-		weigth = 1
-
+# Italian
 
 [languages.it]
-    languageName = "Italian"
+    languageName = "Italiano"
     weight = 10
     title = "ABCrypto"
     description = "Una lente d'ingrandimento sul mondo cripto."
     backgroundColor = "white"
     font = "Raleway"
-    copyright = "© ABCrypto 2019, tutti i diritti sono riservati."
+    copyright = "&copy; ABCrypto 2019, tutti i diritti sono riservati."
     contentDir = "content/italian"
 
 [[languages.it.menu.main]]
-    url = "/"
-    name = "Home"
+    url = "/it/argomenti/"
+    name = "Argomenti"
+    weight = 15
+
+[[languages.it.menu.main]]
+    url = "/it/blog/"
+    name = "Blog"
+    weight = 16
+
+[[languages.it.menu.main]]
+    url = "https://github.com/anabcrypto/abcrypto"
+    name = "Github"
+    weight = 17  
+
+# Footer-Italian
+
+[[languages.it.menu.footer]]
+    url = "/it/biografia/"
+    name = "Biografia"
+    weight = 18
+
+[[languages.it.menu.footer]]
+    url = "/it/terminidiuso/"
+    name = "Termini di Uso"
+    weight = 19
+
+[[languages.it.menu.footer]]
+    url = "/it/contattami/"
+    name = "Contattami"
     weight = 20
 
-[[languages.it.menu.main]]
-    url = "/argomenti/"
-    name = "Argomenti"
-    weight = 30
-
-[[languages.it.menu.main]]
-    url = "/blog/"
-    name = "Blog"
-    weight = 40
-      
-[[languages.it.menu.main]]
-    url = "/bio/"
-    name = "Bio"
-    weight = 50
-
-[[languages.it.menu.icon]]
-		url = "/"
-		name = "language"
-		weigth = 1    
+# Arabic
 
 [languages.ar]
-    languageName = "Arabic"
-    weight = 11
-    title = "ABCrypto"
-    description = "Una lente d'ingrandimento sul mondo cripto."
-    accent = "orange"
+    languageName = "العربية"
+    weight = 30 
+    title = "أب كريبتو"
+    description = "عدسة مكبرة علي العالم الكريبتو"
     backgroundColor = "white"
     font = "Raleway"
-    copyright = "© ABCrypto 2019, tutti i diritti sono riservati."
-    contentDir = "content/italian"        
+    copyright = "أب كريبتو ٢٠١٩ ، كل الحقوق محفوظة &copy;"
+    contentDir = "content/arabic"
+
+[[languages.ar.menu.main]]
+    url = "/ar/argomenti/"
+    name = "المواضيع"
+    weight = 35
+
+[[languages.ar.menu.main]]
+    url = "/ar/blog/"
+    name = "مدونة"
+    weight = 36
+
+[[languages.ar.menu.main]]
+    url = "https://github.com/anabcrypto/abcrypto"
+    name = "جيت هاب"
+    weight = 37  
+
+# Footer-Arabic
+
+[[languages.ar.menu.footer]]
+    url = "/ar/biografia/"
+    name = "حول"
+    weight = 38
+
+[[languages.ar.menu.footer]]
+    url = "/ar/terminidiuso/"
+    name = "تعليمات الاستخدام"
+    weight = 39
+
+[[languages.ar.menu.footer]]
+    url = "/ar/contattami/"
+    name = "تواصل"
+    weight = 40    
