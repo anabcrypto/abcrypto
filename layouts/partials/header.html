@@ -42,7 +42,7 @@
     </script>
     {{ end }}
 
-    <body>
+    <body class="{{ .Lang }}">
         {{ partial "body-open" . }}
         <nav class="navbar" role="navigation" aria-label="main navigation">
 
@@ -68,27 +68,20 @@
                         </div>
                     {{ end }}
 
-                    {{ if gt (len .Site.Home.AllTranslations) 1 }}
-                        <div class="navbar-end">
+                       {{ if gt (len .Site.Home.AllTranslations) 1 }}
+                            <div class="navbar-end">
                                 <div class="navbar-item dropdown">
-                                        <div class="dropdown-trigger">
-                                            <button class="button" style="color: dodgerblue;" aria-haspopup="true" aria-controls="dropdown-menu4">
-                                            <span>
-                                                {{ i18n "language" }} 
-                                            </span>
-                                            <span class="icon is-small">
-                                                <i class="fas fa-angle-down" aria-hidden="true"></i>
-                                            </span>
-
-                                            <div class="navbar-dropdown">
-                                                {{ range .Site.Home.AllTranslations }}
-                                                    <a class="navbar-item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-                                                {{ end }}
-                                            </div>
-                                        </div>
+                                    <div class="select">
+                                        <select name="languageMenu" onchange="location = this.value;" style="color: dodgerblue;">
+                                            <option value="">{{ i18n "language" }}</option>
+                                            {{ range .Site.Home.AllTranslations }}
+                                            <option value="{{ .Permalink }}">{{ .Language.LanguageName }}</option>
+                                            {{ end }}
+                                            </select>
+                                    </div>
                                 </div>
-                        </div>
-                    {{ end }}
+                            </div>
+                        {{ end }}
                 </div>
 
         </nav>

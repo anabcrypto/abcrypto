@@ -9,6 +9,10 @@ body {
     flex-direction: column;
 }
 
+body.ar { 
+  direction: rtl; 
+}
+
 main {
     margin: auto;
     padding: 25px;
@@ -220,3 +224,23 @@ img {
   .navbar navbar-default navbar-fixed-top {
     color: red;
   }
+
+
+  @media screen and (max-width: 767px) {
+    .navbar-link:after {
+        border: 1px solid #00d1b2;
+        border-right: 0;
+        border-top: 0;
+        content: " ";
+        display: block;
+        height: 0.5em;
+        pointer-events: none;
+        position: absolute;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        width: 0.5em;
+        margin-top: -0.375em;
+        right: 1.125em;
+        top: 50%;
+    }
+}
