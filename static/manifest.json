@@ -6,12 +6,12 @@
     "display": "standalone",
     "start_url": "https://abcrypto.co/",
     "lang" : "",
-    "theme_color": "#2196F3",
-    "background_color": "#2196F3",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "orientation": "any",
     "icons": [
         {
-            "src": "/images/favicon.ico",
+            "src": "/favicon.ico",
             "sizes": "48x48"
         },
         {
