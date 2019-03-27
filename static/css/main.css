@@ -9,11 +9,6 @@ body {
     flex-direction: column;
 }
 
-.rtl-navbar{
-  margin-right: auto;
-  margin-left: 0;
-}
-
 main {
     margin: auto;
     padding: 25px;
