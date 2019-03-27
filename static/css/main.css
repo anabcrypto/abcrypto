@@ -9,6 +9,10 @@ body {
     flex-direction: column;
 }
 
+body.ar {
+  direction: rtl;
+}
+
 main {
     margin: auto;
     padding: 25px;
