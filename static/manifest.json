@@ -1,17 +1,14 @@
 {
-    "dir": "ltr",
-    "lang": "de",
-    "name": "ABCrypto",
+    "name" : "ABCrypto",
+    "short_name": "ABCrypto",
+    "description": "A magnyfing glass on the crypto world.",
     "scope": "/",
     "display": "standalone",
     "start_url": "https://abcrypto.co/",
-    "short_name": "ABCrypto",
-    "theme_color": "#9337D8",
-    "description": "A magnyfing glass on the crypto world.",
+    "lang" : "",
+    "theme_color": "#2196F3",
+    "background_color": "#2196F3",
     "orientation": "any",
-    "background_color": "#9337D8",
-    "related_applications": [],
-    "prefer_related_applications": false,
     "icons": [
         {
             "src": "/images/favicon.ico",
