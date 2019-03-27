@@ -42,7 +42,7 @@
     </script>
     {{ end }}
 
-    <body class="{{ .Lang }}">
+    <body>
         {{ partial "body-open" . }}
         <nav class="navbar" role="navigation" aria-label="main navigation">
 
@@ -50,7 +50,7 @@
 
                     <a class="navbar-item is-size-4" href="{{ i18n "siteTitle" . }}">{{ .Site.Title }}</a>
 
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav-menu">
+                    <a role="button" class="navbar-burger rtl-navbar" aria-label="menu" aria-expanded="false" data-target="nav-menu">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -69,7 +69,7 @@
                     {{ end }}
 
                        {{ if gt (len .Site.Home.AllTranslations) 1 }}
-                            <div class="navbar-end">
+                            <div class="navbar-end rtl-navbar">
                                 <div class="navbar-item dropdown">
                                     <div class="select">
                                         <select name="languageMenu" onchange="location = this.value;" style="color: dodgerblue;">
