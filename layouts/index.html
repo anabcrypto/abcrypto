@@ -5,10 +5,9 @@
     <div class="intro">
 
         {{ with .Site.Params.profilePic }} <img class="profile" src="{{ . }}"> {{ end }}
+        <h1 class="is-size-1">{{ .Site.Title }}</h1>
 
-        <h1>{{ .Site.Title }}</h1>
-
-        <h2>{{ markdownify .Site.Params.Description }}</h2>
+        <h2 class="is-size-6">{{ markdownify .Site.Params.Description }}</h2>
         
         <hr>
         <div>
