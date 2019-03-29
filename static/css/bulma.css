@@ -10526,6 +10526,10 @@ label.panel-block:hover {
 
 /* Arabic language */
 
+body.ar {
+  direction:rtl;
+}
+
 .navbar-burger.ar {
   margin-right: auto;
   margin-left: initial !important;
