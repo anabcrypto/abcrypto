@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff"/>
         <link rel="manifest" href="{{ "manifest.json" | absURL }}"></link>
-        <link rel="stylesheet" href="{{ "css/bulma.css" | absURL }}">
         <title>{{ .Title }}</title>
         {{ if .Site.Params.favicon }}
         <link rel="icon" href="{{ .Site.Params.favicon | absURL }}">
@@ -30,13 +29,6 @@
         </script>
         {{ end }}
     </head>
-
-    {{ if .Site.Params.MathJax | default true }}
-    <!-- adds MathJax support -->
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    {{ end }}
 
     <body class="{{ .Lang }}">
         {{ partial "body-open" . }}

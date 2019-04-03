@@ -8,6 +8,11 @@ pygmentsCodefences = true
 pygmentsCodefencesGuessSyntax = true
 pygmentsStyle = "pygments"
 
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
 [languages]
 
 [languages.en]
