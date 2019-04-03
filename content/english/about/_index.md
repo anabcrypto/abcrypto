@@ -5,7 +5,6 @@ draft: false
 ---
 
 <br>
-<br>
 ABCrypto is a website built with the purpose of describing the cryptocurrency world and what rotates around it.
 <br>
 <br>

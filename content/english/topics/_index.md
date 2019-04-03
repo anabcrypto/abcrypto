@@ -4,11 +4,11 @@ date: 2019-01-04T12:12:26+01:00
 draft: false
 ---
 
-# Overview
+# Solidity
 
-* [IPFS](/topics/ipfs/)
-* [ok](/topics/ok/)
+* [What is Solidity?](/topics/language/solidity/whatissolidity/)
+* [Let's get started](/topics/language/solidity/getstarted/)
 
-# Subscriber Information
+# IPFS
 
-* [ok](/topics/ok/)
+* [What is IPFS?](/topics/decentralization/ipfs/whatisipfs/)

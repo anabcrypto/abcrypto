@@ -1,10 +1,14 @@
 {{ partial "header" . }}
 
 <main>
-    <h2 class="title">{{ .Title }}</h2>
-    {{.Content}} 
-    {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} 
-    {{ end }}
+    <div class="content"><h2 class="title">{{ .Title }}</h2>
+        <div class="has-text-justified">
+            {{.Content}} 
+        </div>
+        {{ range (.Paginator 5).Pages }} {{ partial "list-item" . }} 
+        {{ end }}
+    </div>
+    
 
 </main>
 
