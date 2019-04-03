@@ -1,4 +1,4 @@
-baseURL = "//abcrypto.co"
+baseURL = "https://abcrypto.co"
 title = "ABCrypto"
 languageCode = "en-us"
 defaultContentLanguage = "en"
