@@ -6,9 +6,9 @@ draft: false
 
 # Solidity
 
-* [What is Solidity?](/topics/language/solidity/whatissolidity/)
-* [Let's get started](/topics/language/solidity/getstarted/)
+* [What is Solidity?](/topics/language/solidity/what-is-solidity/)
+* [Let's get started](/topics/language/solidity/get-started/)
 
 # IPFS
 
-* [What is IPFS?](/topics/decentralization/ipfs/whatisipfs/)
+* [What is IPFS?](/topics/decentralization/ipfs/what-is-ipfs/)
